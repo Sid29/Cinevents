@@ -10,7 +10,9 @@ import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-
+/*
+ * Classe pour la recupération des données depuis l'api
+ */
 public class DLTask extends IntentService{
 
     /**
@@ -23,11 +25,12 @@ public class DLTask extends IntentService{
     @Override
     protected void onHandleIntent(Intent workIntent) {
         String dataString = workIntent.getDataString();
-        /*try {
-            return downloadUrl(urls[0]);
+        String retour; //string à retourné
+        try {
+           retour = downloadUrl("http://api.allocine.fr/rest/v3/movielist?partner=QUNXZWItQWxsb0Npbuk&count=25&filter=nowshowing&page=1&order=datedesc&format=json");
         } catch (IOException e) {
-            return "Unable to retrieve web page. Url may be invalid0";
-        }*/
+           retour =  "Unable to retrieve web page. Url may be invalid";
+        }
     }
 
 

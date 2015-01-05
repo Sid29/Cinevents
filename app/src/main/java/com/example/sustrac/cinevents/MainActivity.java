@@ -23,9 +23,6 @@ import android.view.MenuItem;
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
 
 
-    private String urlNow = "http://api.allocine.fr/rest/v3/movielist?partner=QUNXZWItQWxsb0Npbuk&count=25&filter=nowshowing&page=1&order=datedesc&format=json",
-            urlSoon = "http://api.allocine.fr/rest/v3/movielist?partner=QUNXZWItQWxsb0Npbuk&count=25&filter=comingsoon&page=1&order=toprank&format=json",
-            urlCinema="http://api.allocine.fr/rest/v3/theaterlist?partner=QUNXZWItQWxsb0Npbuk&count=25&page=1&zip=14000&format=json";
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -35,8 +32,6 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
-    //SectionsPagerAdapter mSectionsPagerAdapter;
-    PagerAdapter mSectionsPagerAdapter;
 
     /**
      * The {@link ViewPager} that will host the section contents.
@@ -57,7 +52,6 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 
         // Ajout des Fragments dans la liste
         fragments.add(Fragment.instantiate(this,GauchePageFragment.class.getName()));
-        fragments.add(Fragment.instantiate(this,MilieuPageFragment.class.getName()));
         fragments.add(Fragment.instantiate(this,DroitePageFragment.class.getName()));
 
 

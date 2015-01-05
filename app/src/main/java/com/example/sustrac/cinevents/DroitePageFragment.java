@@ -29,27 +29,27 @@ public class DroitePageFragment  extends Fragment {
         // Get ListView object from xml
         listView = (ListView) v.findViewById(R.id.listViewDroite);
 
-        // Defined Array values to show in ListView
-        String[] values = new String[] { "Cine0",
-                "Cine1",
-                "Cine2",
-                "Cine3",
-                "Cine4",
-                "Cine5",
-                "Cine6",
-                "Cine7",
-                "Cine8",
-                "Cine9",
-                "Cine10",
-                "Cine11",
-                "Cine12",
-                "Cine13",
-                "Cine14",
-                "Cine15",
-                "Cine16",
-                "Cine17",
-                "Cine18",
-                "Cine19",
+        // Liste de String composant la listView(devrait etre rempli depuis les données récupéré depuis l'api d'allociné.
+        String[] values = new String[] { "Film0",
+                "Film1",
+                "Film2",
+                "Film3",
+                "Film4",
+                "Film5",
+                "Film6",
+                "Film7",
+                "Film8",
+                "Film9",
+                "Film10",
+                "Film11",
+                "Film12",
+                "Film13",
+                "Film14",
+                "Film15",
+                "Film16",
+                "Film17",
+                "Film18",
+                "Film19",
 
         };
 
